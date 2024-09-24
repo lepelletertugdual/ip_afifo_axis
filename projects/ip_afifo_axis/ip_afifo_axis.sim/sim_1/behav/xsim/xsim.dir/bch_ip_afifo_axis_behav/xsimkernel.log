@@ -1,0 +1,7 @@
+Running: xsim.dir/bch_ip_afifo_axis_behav/xsimk.exe -simmode gui -wdb bch_ip_afifo_axis_behav.wdb -simrunnum 0 -socket 49703
+Design successfully loaded
+Design Loading Memory Usage: 8992 KB (Peak: 8992 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 18804 KB (Peak: 18804 KB)
+Simulation CPU Usage: 328 ms

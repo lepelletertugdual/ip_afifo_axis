@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/ip_afifo_axis/sources/ip/ip_afifo_axis/sim/ip_afifo_axis.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ip_afifo_axis
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/ip_afifo_axis/projects/ip_afifo_axis/ip_afifo_axis.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Jun  7 17:47:10 2024
+# Process ID: 11484
+# Current directory: C:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/ip_afifo_axis/projects/ip_afifo_axis
+# Command line: vivado.exe -mode tcl -source ./run_ip_afifo_axis.tcl
+# Log file: C:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/ip_afifo_axis/projects/ip_afifo_axis/vivado.log
+# Journal file: C:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/ip_afifo_axis/projects/ip_afifo_axis\vivado.jou
+# Running On: WORKSTATION, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16794 MB
+#-----------------------------------------------------------
+source ./run_ip_afifo_axis.tcl
+# set name_board     zedboard
+# set name_dut       ip_afifo_axis
+# set name_project   ${name_dut}
+# set name_part      xc7z020clg484-3
+# set name_language  vhdl
+# set name_top_level ${name_dut}
+# set name_bench     bch_${name_dut}
+# create_project -force -name ${name_project}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/ip_afifo_axis/projects/ip_afifo_axis'
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 395.094 ; gain = 43.590
+# read_ip ./../../sources/ip/ip_afifo_axis/ip_afifo_axis.xci
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Applications/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [Vivado 12-13650] The IP file 'C:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/ip_afifo_axis/sources/ip/ip_afifo_axis/ip_afifo_axis.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in 'c:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/ip_afifo_axis/sources/ip/ip_afifo_axis'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+# add_files -fileset sources_1 {
+# 	        ./../../sources/package/pkg_gen_heartbeat.vhd
+#         }
+# add_files -fileset sources_1 {
+#             ./../../sources/design/gen_heartbeat.vhd
+#         }
+# add_files -fileset sim_1 {
+#             ./../../sources/package/pkg_mgt_file.vhd
+# 	        ./../../sources/package/pkg_gen_heartbeat.vhd
+#         }
+# add_files -fileset sim_1 {
+#             ./../../sources/design/gen_heartbeat.vhd
+#         }
+# add_files -fileset sim_1 {
+#             ./../../sources/bench/bch_ip_afifo_axis.vhd
+#         }
+# set_property top ${name_bench} [get_filesets sim_1]
+# update_compile_order -fileset sources_1
+# update_compile_order -fileset sim_1
+# set_property target_language ${name_language} [current_project]
+# set_property part            ${name_part}     [current_project]
+# synth_design -directive        PerformanceOptimized \
+# 			 -fsm_extraction   one_hot              \
+# 			 -resource_sharing off                  \
+# 			 -incremental_mode aggressive           \
+# 			 -retiming                              \
+# 			 -debug_log                             \
+# 			 -verbose
+Command: synth_design -directive PerformanceOptimized -fsm_extraction one_hot -resource_sharing off -incremental_mode aggressive -retiming -debug_log -verbose
+Starting synth_design
+Using part: xc7z020clg484-3
+Top: gen_heartbeat
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-3
